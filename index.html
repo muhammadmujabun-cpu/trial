@@ -2414,10 +2414,6 @@ V.master=()=>{
       ()=>S.classes.filter(c=>(!isGuru||allowedClasses.includes(c.name))&&(!F.kt||c.tingkat==F.kt)),
       [
         {t:'Nama Kelas',f:c=>`<b>${esc(c.name)}</b>`},
-        {t:'Tingkat',f:c=>`<span class="bd Selesai">${esc(c.tingkat||'X')}</span>`},
-        {t:'Jurusan',f:c=>esc(c.jurusan||'Umum')},
-        {t:'Wali Kelas',f:c=>esc(teacherOf(c.wali))},
-        {t:'Ruang',f:c=>esc(c.ruang||'-')},
         {t:'Siswa Terdaftar',f:c=>`<button class=b onclick="F.sc='${c.name}';mTab='siswa';go('master')"><b>${stat(S.stu,s=>s.cls==c.name)}</b> siswa ›</button>`},
         {t:'Aksi',f:c=>`<button class=b onclick="F.sc='${c.name}';mTab='siswa';go('master')">Lihat Siswa</button>${isAdm?`<button class=b onclick="clsf('${c.id}')">Edit</button><button class="b er" onclick="clsd('${c.id}')">Hapus</button>`:''}`}
       ],
