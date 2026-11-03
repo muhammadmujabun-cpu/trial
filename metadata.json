@@ -1,0 +1,6 @@
+{
+  "name": "NAIL TEST - Sistem Ujian CBT & Portal Bimbingan Nailul Authar",
+  "description": "Sistem ujian CBT terpadu bimbingan persiapan masuk Universitas Al-Azhar Mesir Nailul Authar dengan kustomisasi tema warna dinamis dan dukungan multibahasa (Indonesia, Inggris, Arab).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
